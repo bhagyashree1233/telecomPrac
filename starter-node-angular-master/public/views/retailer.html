@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<div class="container" style="width:100%;">
+
+<img src="sc2.jpg" style="width:130px;height:100px;margin:4px;"></img>
+
+<div style="font-weight:bold;float:right;margin:8px;">
+  <p>User Id : 100637</p>
+  <p>Company name : Telecom</p>
+  <p>Balance: 230 Rs</p>
+</div>   
+
+<nav class="navbar navbar-default default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" ng-click="navClick('rechargeR')">Recharge</a></li>
+        <li><a href="#" ng-click="navClick('busBookingR')">Bus Booking</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bill Payment<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('postPaidRechargeR')">Postpaid Recharge</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">DTH Booking<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('dthBookingR')">DTH Booking</a></li>
+           <li><a href="#" ng-click="navClick('dthBookingReportR')">DTH Booking Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Report<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('allReportsR')">All Reports</a></li>
+           <li><a href="#" ng-click="navClick('retailerAccountReportR')">Account Reports</a></li>
+           <li><a href="#" ng-click="navClick('topUpHistoryR')">Topup History</a></li>
+           <li><a href="#" ng-click="navClick('refundReportR')">Refund Report</a></li>
+           <li><a href="#" ng-click="navClick('checkStatusMdDR')">Check Status</a></li>
+           <li><a href="#" ng-click="navClick('creditRechargeReportR')">Credit Recharge Report</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fund Request<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('fundRequestR')">Send Fund Request</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Others<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('complainR')">Complain</a></li>
+           <li><a href="#">SMS Format</a></li>
+           <li><a href="#" ng-click="navClick('changeProfileR')">Change Profile</a></li>
+           <li><a href="#" ng-click="navClick('changePasswordMdDR')">Change Password</a></li>
+           <li><a href="#" ng-click="navClick('bankDetailsMdDR')">Bank Account Detail</a></li>
+          </ul>
+        </li>
+        <li><a href="/">Logout</a></li>
+      </ul>
+    </div>
+</nav>
+
+  <span ng-if="selTempleteUrl != ''">
+    <div data-ng-include="selTempleteUrl" style="width:100%;height:100px;"></div>
+  </span> 
+</div>
+</body>
+</html>  

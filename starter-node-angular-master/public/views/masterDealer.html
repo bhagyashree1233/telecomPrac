@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  		
+</head>
+<body>
+<div class="container">
+
+<img src="sc2.jpg" style="width:130px;height:100px;margin:4px;"></img>
+
+<div style="font-weight:bold;float:right;margin:8px;">
+  <p>User Id : 3004</p>
+  <p>Company name : Telecom</p>
+  <p>Balance: 520 Rs</p>
+</div>   
+
+<nav class="navbar navbar-default default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dealer<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('addNewDealerMd')">Add New Dealer</a></li>
+           <li><a href="#" ng-click="navClick('listOfDealerMd')">List of Dealer</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Retailer<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('addNewRetailerMdD')">Add New Retailer</a></li>
+           <li><a href="#" ng-click="navClick('listOfRetailerMd')">List of Retailers</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Report<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('accountReportMdD')">Account Reports</a></li>
+           <li><a href="#" ng-click="navClick('creditReportMdD')">Credit Reports</a></li>
+           <li><a href="#" ng-click="navClick('checkStatusMdDR')">Check Status</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Complain & Account Setting<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="#" ng-click="navClick('changePasswordMdDR')">Change Password</a></li>
+           <li><a href="#" ng-click="navClick('bankDetailsMdDR')">Bank Account Detail</a></li>
+          </ul>
+        </li>
+        <li><a href="/">Logout</a></li>
+      </ul>
+    </div>
+</nav>
+  <span ng-if="selTempleteUrl != ''">
+    <div data-ng-include="selTempleteUrl" style="width:100%;height:100px;"></div>
+  </span> 
+  </div>
+</body>
+</html>  
